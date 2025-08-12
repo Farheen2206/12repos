@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .diagram {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .stage {
+      background: #ffffff;
+      border: 2px solid #007acc;
+      color: #007acc;
+      padding: 20px;
+      margin: 10px;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 50%;
+      position: relative;
+      font-weight: bold;
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 20px solid #007acc;
+      margin: 10px;
+    }
+
+    .descriptions {
+      margin-top: 40px;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .descriptions p {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .diagram {
+        flex-direction: column;
+      }
+      .arrow {
+        transform: rotate(90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>DevOps Lifecycle Diagram</h1>
+
+  <div class="diagram">
+    <div class="stage">Plan</div>
+    <div class="arrow"></div>
+    <div class="stage">Develop</div>
+    <div class="arrow"></div>
+    <div class="stage">Build</div>
+    <div class="arrow"></div>
+    <div class="stage">Test</div>
+    <div class="arrow"></div>
+    <div class="stage">Release</div>
+    <div class="arrow"></div>
+    <div class="stage">Deploy</div>
+    <div class="arrow"></div>
+    <div class="stage">Operate</div>
+    <div class="arrow"></div>
+    <div class="stage">Monitor</div>
+  </div>
+
+  <div class="descriptions">
+    <p><strong>Plan:</strong> Identify business needs, set goals, and plan features for development.</p>
+    <p><strong>Develop:</strong> Write and manage application code using version control and collaboration tools.</p>
+    <p><strong>Build:</strong> Compile source code, generate builds, and prepare artifacts for deployment.</p>
+    <p><strong>Test:</strong> Perform automated and manual tests to ensure quality and functionality.</p>
+    <p><strong>Release:</strong> Package the application and prepare it for delivery to production.</p>
+    <p><strong>Deploy:</strong> Move the application to production or staging environments.</p>
+    <p><strong>Operate:</strong> Manage infrastructure, ensure uptime, and perform system administration.</p>
+    <p><strong>Monitor:</strong> Continuously track performance, logs, and errors to improve reliability.</p>
+  </div>
+
+</body>
+</html>
